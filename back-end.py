@@ -18,6 +18,9 @@ def login():
 def user(usr):
 	return f"<p>{usr}</p>"
 
+@app.route("/admin/Payment_Order")
+def Payment_Order():
+	return render_template("Payment_Order.html")
 
 if __name__ == "__main__":
 	app.run(debug=True)
